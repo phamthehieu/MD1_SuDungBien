@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng dụng chuyển đổi tiền tệ</title>
+</head>
+<style>
+    table, td, th {
+        width: 600px;
+        text-align: center;
+    }
+</style>
+<body>
+<table>
+    <tr>
+        <th>Amount</th>
+        <th>From Curency</th>
+        <th>To Curency</th>
+    </tr>
+    <tr>
+        <td><input type="text" id="dauvao"></td>
+        <td>
+            <select name="" id="select1">
+                <option value="a">VND</option>
+                <option value="b">USD</option>
+            </select>
+        </td>
+        <td>
+            <select name="" id="select2">
+                <option value="a">VND</option>
+                <option value="b">USD</option>
+            </select>
+        </td>
+        <td>
+            <button onclick="chuyen()">Convert</button>
+        </td>
+    </tr>
+    <tr>
+        <td>Quy đổi :</td>
+        <td><p id="kq"></p></td>
+    </tr>
+    <script>
+        function chuyen() {
+            let giatrivao = document.getElementById('dauvao').value;
+            let select1 = document.getElementById('select1').value;
+            let select2 = document.getElementById('select2').value;
+            if (select1 == select2)
+            {
+               document.getElementById('kq').innerHTML = giatrivao
+            }
+
+            if (select1 == "a" && select2 == "b")
+            {
+                document.getElementById('kq').innerHTML = giatrivao/23000
+            }
+
+            if (select1 == "b" && select2 == "a")
+            {
+                document.getElementById('kq').innerHTML = giatrivao*23000
+            }
+
+        }
+    </script>
+</table>
+</body>
+</html>
