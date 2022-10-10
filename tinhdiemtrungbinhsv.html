@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính điểm trung binnh của sinh viên</title>
+</head>
+<body>
+<script>
+    inputdiemvatly = prompt("Điểm vật lý");
+    inputdiemhoahoc = prompt("Điểm Hóa Học");
+    inputdiemsinhhoc = prompt("Điểm sinh hoc");
+    let vatly = parseInt(inputdiemvatly);
+    let hoahoc = parseInt(inputdiemhoahoc);
+    let sinhhoc = parseInt(inputdiemsinhhoc);
+    let trungbinh =  (vatly + sinhhoc +  hoahoc) / 3;
+    document.write("Điểm Trung Bình là :" + trungbinh);
+</script>
+</body>
+</html>
