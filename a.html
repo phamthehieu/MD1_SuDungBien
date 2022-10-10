@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<label for="name">Họ và tên</label>
+<br>
+<input type="text" name="name" id="name">
+<br>
+<label for="age">Tuổi</label>
+<br>
+<input type="text" name="age" id="age">
+<br>
+<button onclick="hienthi()">Nhập</button>
+<br>
+<script>
+  function hienthi() {
+    var name = document.getElementById("name").value;
+    var age = document.getElementById("age").value;
+    document.write("Tên của thí sinh:" +" " + name);
+    document.write("</br>")
+    document.write("Tuổi của thí sinh:" + " " + age);
+  }
+</script>
+</body>
+</html>
